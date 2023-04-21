@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Try end this game</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+	<link rel="icon" sizes="96x96" href="data/icon.png">
+	<link rel="stylesheet" href="data/style.css?1">
+</head>
+<body>
+	<header>
+		<img alt="logo lycée guy mollet arras" src="data/lgmlogo.jpg">
+		<h1>Projet SIS1 [Alex Labuz]</h1>
+	</header>
+
+	<footer>
+		<p>Version 1.2.0</p>
+	</footer>
+
+	<div class="window" id="main">
+		<div class="textWindow">
+			<h1>Try end this game</h1>
+			<h2>Régle</h2>
+			<p>Vous devez terminer un jeu de platformes le plus vite possible sans toucher aux bombes 
+				présentes, vous avez 5 vies pour la totalité du parcours.</p>
+		</div>
+		<div class="emplacementButton">
+			<button id="openRanking">Classement</button>
+			<button id="openWindow">Avant de jouer !</button>
+			<button id="play">Jouer</button>
+		</div>
+	</div>
+
+	<div class="window" id="ranking" style="display:none">
+		<div class="textWindow">
+			<h2>Classement</h2>
+			<table id="rankingTable">
+				<tr>
+					<th class="rang"></th>
+					<th>Temps</th>
+					<th>Pseudo</th>
+				</tr>
+			</table><br><br>
+		</div>
+		<div class="emplacementButton">
+			<button id="closeRanking">Fermer</button>
+		</div>
+	</div>
+
+	<div class="window" id="help" style="display:none">
+		<div class="textWindow">
+			<h2>Commandes (Clavier)</h2>
+			<p>
+				- "→" aller à droite<br>
+				- "←" aller à gauche<br>
+				- "Espace" sauter<br>
+				- "f" Sprinter<br>
+				<i><b>Sur smartphone des touches tactiles vont apparaîtres</b></i>
+			</p>
+			<h2>Astuces</h2>
+			<p>
+				- Ne sous-estimez pas le sprint (f) il vous sera trés utile particuliérement pour sauter plus loin<br>
+				- Plus vous appuyez longtemps sur "espace" plus vous sauterez haut
+			</p><br>
+		</div>
+		<div class="emplacementButton">
+			<button id="closeWindow">Fermer</button>
+		</div>
+	</div>
+
+
+<script src="data/ajax.js"></script>
+<script src="data/script.js"></script>
+</body>
+
+</html>
