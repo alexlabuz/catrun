@@ -1,7 +1,6 @@
 var buttonOpenWindow = document.getElementById("openWindow");
 var buttonCloseWindow = document.getElementById("closeWindow");
 
-var buttonOpenRanking = document.getElementById("openRanking");
 var buttonCloseRanking = document.getElementById("closeRanking");
 
 var divHelp = document.getElementById("help");
@@ -18,12 +17,6 @@ buttonCloseWindow.addEventListener("click", function(){
 	divHelp.style.display = "none";
 });
 
-buttonOpenRanking.addEventListener("click", function(){
-	buttonOpenRanking.disabled = "disabled";
-	divRanking.style.display = "block";
-	
-
-});
 buttonCloseRanking.addEventListener("click", function(){
 	buttonOpenRanking.removeAttribute("disabled");
 	divRanking.style.display = "none";
@@ -33,6 +26,7 @@ document.getElementById("play").addEventListener("click", function(){
 	window.location = "play/";
 });
 
+/*
 ajaxGet("server/ranking.json?" + Math.round(+new Date() / 1000), function(e){
 	rankingTable = JSON.parse(e);
 
@@ -55,3 +49,4 @@ ajaxGet("server/ranking.json?" + Math.round(+new Date() / 1000), function(e){
 		document.getElementById("rankingTable").appendChild(trTable);
 	}
 });
+*/

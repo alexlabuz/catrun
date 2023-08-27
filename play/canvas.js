@@ -253,13 +253,13 @@ window.addEventListener("load",function(){
 		if(graviteActive){
 
 			if(hauteurPersonage < hauteurPlatforme){
-				hauteurPersonage = hauteurPersonage + 6;
-				if(hauteurPersonage > (hauteurPlatforme - 6)){
+				hauteurPersonage = hauteurPersonage + 5;
+				if(hauteurPersonage > (hauteurPlatforme - 5)){
 					hauteurPersonage = hauteurPlatforme;
 				}
 			}else if(hauteurPersonage > hauteurPlatforme && hauteurPersonage < 260){
 				if(hauteurPersonage < 260){
-					hauteurPersonage = hauteurPersonage + 6;
+					hauteurPersonage = hauteurPersonage + 5;
 				}
 			}
 			else{
@@ -471,8 +471,9 @@ window.addEventListener("load",function(){
 			context.textAlign = "center";
 			context.fillStyle = "rgb(220,220,80)";
 			context.font = "24pt arial";
-			context.fillText("Stage terminé", 150, 50);
+			context.fillText("Stage terminé", 150, 70);
 
+			/*
 			context.fillStyle = "white";
 			//Vérifie si le joueur est dans le classement
 			ajaxGet("../server/ranking.json", function(e){
@@ -488,12 +489,18 @@ window.addEventListener("load",function(){
 				}
 
 			});
+			*/
+
+			context.textAlign = "center";
+			context.font = "12pt arial";
+			context.fillStyle = "#97ff49";
+			context.fillText("Votre temps : " + userTime + " sec", 150, 150);
 
 			context.font = "10pt arial";
 			context.fillStyle = "white";
-			context.fillText("Développement : Alex Labuz", 150, 250);
-			context.fillText("Graphisme : Elisa Labuz", 150, 265);
-			context.fillText("Projet SIS1 du Lycée Guy Mollet d'Arras", 150, 280);
+			context.fillText("Développement : Alex Labuz", 150, 220);
+			context.fillText("Graphisme : Elisa Labuz", 150, 240);
+			context.fillText("Projet pour le Lycée Guy Mollet d'Arras, 2019", 150, 260);
 		}, 2500);
 		
 	}
