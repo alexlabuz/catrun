@@ -27,7 +27,7 @@ window.addEventListener("load",function(){
 		var text1;
 		var text2;
 		if(vie > 0){
-			text1 = "Try end this game";
+			text1 = "Cat  Run";
 			text2 = "Cliquez sur espace pour démarrer";
 		}else{
 			text1 = "Partie terminée";
@@ -290,8 +290,6 @@ window.addEventListener("load",function(){
 					if(spriteEtat > 4){
 						spriteEtat = 0;
 					}
-				}else{
-					spriteEtat = 2;
 				}
 
 				//Défilement background
